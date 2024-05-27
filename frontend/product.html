@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>av3 product crud</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script
+      src="https://kit.fontawesome.com/74e38f8991.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h2>Editar Produto</h2>
+    <form class="single-product-form" autocomplete="off">
+      <div class="product-control">
+        <label for="name" id="name-label">Nome</label>
+        <input type="text" name="name" id="product-edit-name" />
+
+        <label for="description" id="description-label">Descrição</label>
+        <input type="text" name="description" id="product-edit-description" />
+
+        <label for="price" id="price-label">Preço</label>
+        <input type="number" name="price" step="0.01" id="product-edit-price" />
+      </div>
+      <button class="btn product-edit-btn" type="submit">Editar</button>
+      <div class="form-alert"></div>
+    </form>
+    <a href="index.html" class="back-link">Voltar para produtos</a>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./edit-product.js"></script>
+  </body>
+</html>
